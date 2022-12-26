@@ -1,38 +1,612 @@
-.App {
-  text-align: center;
+/*--------------------------- Navbar */
+
+/* Logo */
+
+.blueOlx img {
+  position: relative;
+  width: 5vh;
+  margin: 1vh 0vh 5vh 5vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.blackOlx img {
+  position: relative;
+  width: 15vh;
+  margin: 1% 0% 5% 1%;
+  border-style: none;
+}
+
+/* Upper Nav links */
+
+.Upper-nav {
+  display: inline-flex;
+}
+
+.Top-links {
+  font-size: 12px;
+  font-weight: 600;
+  position: relative;
+  left: 10vh;
+  bottom: 1vh;
+  margin-top: 2vh;
+  display: inline-flex;
+}
+
+.property-icon {
+  padding-bottom: 1vh;
+}
+
+.property-icon:hover {
+  cursor: pointer;
+  color: #3a77ff;
+}
+
+.motors-icon {
+  padding-bottom: 1vh;
+}
+
+.motors-icon:hover {
+  cursor: pointer;
+  color: #3a77ff;
+}
+
+.Top-links a {
+  padding-right: 20%;
+}
+
+.Top-links a:hover {
+  cursor: pointer;
+  color: #3a77ff;
+}
+
+/* =-------------------------mid navbar */
+
+.midnav {
+  margin-top: -1%;
+  margin-bottom: -2%;
+}
+
+/* Search */
+
+.Location-input {
+  position: relative;
+  left: 8vh;
+  bottom: 0rem;
+  border-radius: 1px;
+  border-width: 2px;
+  border-color: rgb(1, 25, 1);
+  width: 35vh;
+  height: 3rem;
+  color: grey;
+  font-size: 20px;
+}
+
+.search-bar {
+  position: relative;
+  left: 10vh;
+  bottom: 0.5rem;
+  height: 3rem;
+  width: 80vh;
+  border-radius: 5px 0px 5px 5px;
+  border-width: 2px;
+  border-color: darkgreen;
+  padding-left: 2%;
+}
+
+.search-bar:hover {
+  border-color: #3a77ff;
+  cursor: pointer;
+}
+
+.search-button {
+  position: relative;
+  left: 7vh;
+  bottom: 0.5rem;
+  height: 3rem;
+  width: 7%;
+  border-radius: 4px;
+  background-color: rgb(12, 46, 12);
+  color: aliceblue;
+}
+
+.search-button:hover {
+  background-color: rgb(26, 112, 26);
+  z-index: 2;
+}
+
+.login {
+  text-decoration: none;
+  color: rgb(24, 31, 24);
+  position: relative;
+  left: 12vh;
+  bottom: 0.5rem;
+  font-size: 19px;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.login:hover {
+  color: #346b71;
+  cursor: pointer;
+}
+
+.sellButton {
+  position: relative;
+  left: 85%;
+  margin-top: -10%;
+  border-style: none;
+  background-color: none;
+  border-color: none;
+  width: 0%;
+  height: 0%;
+  border-width: 0px;
+}
+
+/* ----------All Categories--------- */
+
+.categorylist {
+  position: relative;
+  right: 10%;
+}
+
+.category-heading {
+  position: relative;
+  color: #002f34;
+}
+
+.CategoryItem {
+  color: #020a0f;
+}
+
+.allCategories {
+  padding: 0 2%;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.allCategories a:hover {
+  color: #3a77ff;
+}
+
+.thirdlist:hover {
+  color: #688caf;
+  cursor: pointer;
+}
+
+/* =-------------------Footer */
+
+/* footer */
+
+footer {
+  background-color: rgb(237, 237, 237);
+  box-sizing: border-box;
+}
+
+.section-gap {
+  font-size: 13px;
+  margin-bottom: 0%;
+  width: "fit-content";
+  margin-top: 70vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* List section */
+.sing-footer {
+  color: grey;
+  padding: 2% 0% 5% 0%;
+  position: relative;
+  top: 40%;
+  width: 98%;
+  display: inline-flex;
+}
+
+.list-div {
+  margin: 0% 7%;
+  position: relative;
+  right: 5%;
+}
+
+.sing-footer h6 {
+  color: rgb(3, 56, 3);
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  width: 220%;
+}
+
+.sing-footer ul {
+  list-style: none;
+  font-weight: 200;
+  width: 190%;
+}
+
+.nav-footer li:hover {
+  cursor: pointer;
+  color: darkgreen;
+}
+
+/* Social links */
+
+.social-links {
+  display: inline-flex;
+}
+
+.social-links img {
+  width: 90%;
+  padding: 0%;
+}
+.social-links img:hover {
+  cursor: pointer;
+}
+
+#Move {
+  position: relative;
+  right: 5%;
+}
+#Move2 {
+  position: relative;
+  right: 10%;
+}
+#Move3 {
+  position: relative;
+  right: 15%;
+}
+
+.social-links2 {
+  display: inline-flex;
+}
+
+.social-links2 img {
+  width: 180%;
+  padding: 0%;
+  margin: 0% 0%;
+  position: relative;
+  top: 170%;
+}
+.social-links2 img:hover {
+  cursor: pointer;
+}
+
+#move {
+  position: relative;
+  left: 30%;
+}
+#move2 {
+  position: relative;
+  left: 60%;
+}
+
+ul {
+  margin-bottom: 0%;
+  padding-left: 2%;
+  list-style: none;
+}
+
+/* Copyright*/
+
+.last {
+  background-color: rgb(3, 47, 30);
+  color: white;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px;
+  margin-bottom: -5%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav1 {
+  height: 100px;
+  background-color: antiquewhite;
+}
+
+/* ------------- Products ------------- */
+
+.card-img {
+  width: 100%;
+  object-fit: contain;
+  height: 150px;
+  background-color: rgb(34, 34, 34);
+  border-radius: 5px 5px 0 0;
+}
+
+.featur-btn {
+  background-color: #ffce32;
+  font-size: 10px;
+  top: 120px;
+  left: 5px;
+}
+
+.cardFooter {
+  font-size: 12px;
+  color: rgb(56, 53, 53);
+}
+
+.heart-icon {
+  right: 5px !important;
+  top: 3px !important;
+}
+
+.feature-line {
+  width: 5px;
+  height: 100%;
+  background-color: #ffce32;
+  border-radius: 0 0 0 5px;
+}
+
+.load-more-btn:hover {
+  outline: 2px solid black !important;
+  transition: 0.05s ease;
+}
+/* ------------- Product Listings ------------- */
+
+.CheckboxContainer {
   display: flex;
-  flex-direction: column;
   align-items: center;
+}
+
+.CheckBox {
+  cursor: pointer;
+  width: 1.3rem;
+  height: 1.3rem;
+  outline: none !important;
+}
+
+.CheckBoxLable {
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .listingColumn {
+    scale: 0.94;
+    transform-origin: 0 2rem !important;
+  }
+}
+
+/* -------------- Carousel-------------- */
+
+.productImageSlider {
+  height: 90vh;
+  border-radius: 5px;
+}
+
+.carouselInnerContainer {
+  height: 80%;
+  border-radius: 5px 5px 0 0;
+}
+
+.slideImg {
+  object-fit: contain;
+  height: 100% !important;
+  width: 100% !important;
+  background-color: rgb(34, 34, 34);
+}
+
+.thumb-container {
+  height: 18%;
+}
+
+.thumbs {
+  height: 80% !important;
+}
+
+.active {
+  opacity: 1 !important;
+  border: 2px solid black !important;
+}
+
+.thumbs:hover {
+  opacity: 1;
+}
+
+.prev,
+.next {
+  margin-bottom: 20%;
+}
+
+/* -------------- Price Section-------------- */
+
+.priceRowIcons,
+.priceRowPrice,
+.priceRow {
+  height: fit-content;
+}
+
+.shareNode:hover {
+  color: #3a77ff;
+  cursor: pointer;
+}
+
+/* -------------- Seller Description -------------- */
+
+.sellerImage {
+  width: 4rem;
+}
+
+.memberTime {
+  font-size: 14px;
+}
+
+.sellerName {
+  font-size: 1rem;
+}
+
+.chatWithSellerBtn,
+.chatWithSellerBtn:hover {
+  background-color: #002f34;
+  font-size: 1rem;
+}
+
+/* -------------- Product Info -------------- */
+
+.productInfoHeading {
+  font-size: 20px;
+}
+
+/*------------------ Login Form ------------- */
+
+.linksection {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: rgb(68, 92, 91);
+  text-decoration: none;
+}
+
+.logincard {
+  width: 30vw;
+  border-radius: 5px;
+  border-width: 2px;
+  height: 110vh;
+  position: relative;
+  overflow: hidden;
+  left: 450px;
+  top: 50px;
+  z-index: 2;
+  box-shadow: #7e7d7d;
+  margin-bottom: 10%;
+}
+
+.forms img {
+  width: 40%;
+  margin: 7% 25% 0%;
+}
+
+.title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  display: block;
+  color: rgb(49, 95, 95);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.usernameinput {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 13px;
+  padding-left: 15px;
+  position: relative;
+  left: 10px;
+  margin: 0px 0px 20px 55px;
+  width: 65%;
+  height: 50px;
+  border-style: 2px solid rgb(33, 159, 140);
+  background: #edf1f4ad;
+  border-radius: 5px;
+}
+.passwordinput {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 13px;
+  margin: 0px 0px 30px 35px;
+  padding-left: 15px;
+  position: relative;
+  left: 30px;
+  width: 65%;
+  height: 50px;
+  border-style: 2px solid rgb(33, 159, 140);
+  background: #edf1f4ad;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.forgotbutton {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  color: #7e7d7d;
+  margin-left: 200px;
+}
+
+.loginformbtn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.buttonclass {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 65%;
+  height: 45px;
+  color: rgb(231, 255, 251);
+  background-color: rgb(49, 95, 95);
+  border-radius: 5px;
+  margin: 20px 0px 50px 0px;
+  border-style: 0.5px solid rgb(107, 220, 203);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonclass:hover {
+  color: rgb(49, 95, 95);
+  border-style: 0.5px solid rgb(49, 95, 95);
+  background-color: rgb(231, 255, 251);
+  -webkit-transition: all 0.4s;
+  z-index: 20;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.bottom {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.bottom span {
+  color: #565758;
+  font-size: 14px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.sign-up {
+  cursor: pointer;
+  color: rgb(68, 92, 91);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.Privacy-Terms {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(140, 133, 133);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 5% 25% 0%;
+  text-align: center;
+}
+
+.terms {
+  color: #0c2742;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/*  sell form */
+.cameraicon {
+  width: 4rem;
+}
+.image-box {
+  width: 50vh;
+  height: 25vh;
+}
+.box-number {
+  position: relative;
+  right: 15vh;
 }
