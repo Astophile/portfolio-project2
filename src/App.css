@@ -203,7 +203,7 @@ footer {
 .list-div {
   margin: 0% 7%;
   position: relative;
-  right: 5%;
+  right: 6rem;
 }
 
 .sing-footer h6 {
@@ -218,9 +218,11 @@ footer {
   list-style: none;
   font-weight: 200;
   width: 190%;
+  position: relative;
+  right: 2rem;
 }
 
-.nav-footer li:hover {
+.sing-footer li:hover {
   cursor: pointer;
   color: darkgreen;
 }
@@ -232,9 +234,10 @@ footer {
 }
 
 .social-links img {
-  width: 30rem;
-  padding: 0rem;
+  width: 2.5rem;
+  padding: 0.5rem;
 }
+
 .social-links img:hover {
   cursor: pointer;
 }
@@ -243,6 +246,7 @@ footer {
   position: relative;
   right: 5%;
 }
+
 #Move2 {
   position: relative;
   right: 10%;
@@ -257,23 +261,15 @@ footer {
 }
 
 .social-links2 img {
-  width: 180%;
-  padding: 0%;
+  width: 6rem;
   margin: 0% 0%;
   position: relative;
-  top: 170%;
-}
-.social-links2 img:hover {
-  cursor: pointer;
+  top: 1rem;
+  right: 1rem;
 }
 
-#move {
-  position: relative;
-  left: 30%;
-}
-#move2 {
-  position: relative;
-  left: 60%;
+.social-links2 img:hover {
+  cursor: pointer;
 }
 
 ul {

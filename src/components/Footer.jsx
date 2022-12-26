@@ -51,7 +51,7 @@ function Footer() {
               </ul>
             </div>
             <div className="list-div">
-              <h6>FOLLOW US</h6>
+              <h6 className="w-50">FOLLOW US</h6>
               <div className="social-links">
                 <div>
                   <img src={fb} />
@@ -70,10 +70,10 @@ function Footer() {
                 <div>
                   <img src={appstore} />
                 </div>
-                <div id="move">
+                <div>
                   <img src={googleplay} />
                 </div>
-                <div id="move2">
+                <div>
                   <img src={appgallery} />
                 </div>
               </div>
