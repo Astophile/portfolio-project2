@@ -232,8 +232,8 @@ footer {
 }
 
 .social-links img {
-  width: 90%;
-  padding: 0%;
+  width: 30rem;
+  padding: 0rem;
 }
 .social-links img:hover {
   cursor: pointer;
