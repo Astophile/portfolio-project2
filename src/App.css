@@ -132,7 +132,7 @@
 .sellButton {
   position: relative;
   left: 7rem;
-  bottom: 1rem;
+  bottom: 0.5rem;
   margin-top: -9rem;
   border-style: none;
   background-color: none;
