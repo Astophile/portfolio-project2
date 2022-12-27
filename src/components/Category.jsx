@@ -44,46 +44,32 @@ function Category() {
             style={categoryStyle}
             className="allCategories position-absolute left-0 bg-white shadow "
           >
-            <a
-              className="dropdown-item text-decoration-none fs-14 grayShade main-category"
-              href="/electronics"
-            >
-              Electronics
-            </a>
-            <a
-              className="dropdown-item text-decoration-none fs-14 grayShade main-category"
-              href="/jewelery"
-            >
-              Jewelery
-            </a>
-            <a
-              className="dropdown-item text-decoration-none fs-14 grayShade main-category"
-              href="/men's clothing"
-            >
-              Men's Clothing
-            </a>
-            <a
-              className="dropdown-item text-decoration-none fs-14 grayShade main-category"
-              href="/women's clothing"
-            >
-              Women's Clothing
+            <a className="dropdown-item text-decoration-none  fs-14 grayShade main-category">
+              {apiData.map((item, index) => {
+                const data = item;
+                return (
+                  <li key={index} className="list-inline-item ms-2 ">
+                    <Link
+                      to={`/${item}`}
+                      className="text-decoration-none text-uppercase fs-14 main-category CategoryItem"
+                    >
+                      {data}
+                    </Link>
+                  </li>
+                );
+              })}
             </a>
           </li>
 
           {apiData.map((item, index) => {
-            const str = item;
-            const arr = str.split(" ");
-            for (let i = 0; i < arr.length; i++) {
-              arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
-            }
-            const str2 = arr.join(" ");
+            const data = item;
             return (
               <li key={index} className="list-inline-item ms-2 ">
                 <Link
                   to={`/${item}`}
-                  className="text-decoration-none fs-14 main-category CategoryItem"
+                  className="text-decoration-none text-uppercase fs-14 main-category CategoryItem"
                 >
-                  {str2}
+                  {data}
                 </Link>
               </li>
             );

@@ -57,7 +57,10 @@ function Articles() {
                 </div>
                 <div className="selectView d-flex align-items-center justify-content-between w-25">
                   <span className="viewText fs-14 fw-bold">VIEW</span>
-                  <MenuOutlinedIcon className="curserPointer" />
+                  <MenuOutlinedIcon
+                    onClick={handleFullView}
+                    className="curserPointer"
+                  />
                   <GridViewOutlinedIcon
                     onClick={handleDisc}
                     className="curserPointer"
