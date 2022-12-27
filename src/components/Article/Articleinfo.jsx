@@ -47,7 +47,7 @@ function Articleinfo() {
                 name={apiData.name}
                 phoneNumber={apiData.phoneNumber}
               />
-              <Locations location={apiData.location} />
+              <Locations />
             </div>
           </div>
         </div>

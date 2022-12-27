@@ -15,7 +15,7 @@ function Prices(props) {
         </div>
         <p className="grayShade">{props.title}</p>
         <div className="productPriceFooter d-flex justify-content-between">
-          <p className="fs-12 grayShade">{props.location}</p>
+          <p className="fs-12 grayShade">Lahore,Pakistan.</p>
           <p className="fs-12 grayShade">1 day ago</p>
         </div>
       </div>

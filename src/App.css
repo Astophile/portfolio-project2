@@ -131,15 +131,47 @@
 
 .sellButton {
   position: relative;
-  left: 6rem;
-  bottom: 0.5rem;
-  margin-top: -8rem;
+  left: 7rem;
+  margin-top: -5rem;
   border-style: none;
   background-color: none;
   border-color: none;
   width: 0%;
   height: 0%;
   border-width: 0px;
+}
+
+@media (max-width: 992px) {
+  /* Logo */
+  .blackOlx {
+    padding-left: 12rem;
+  }
+
+  /* Location */
+  .Location-input {
+    width: 8rem;
+    margin-left: -3rem;
+    padding-top: 0.5rem;
+  }
+
+  /* Search bar */
+  .search-bar {
+    width: 20rem;
+    position: relative;
+    left: 9rem;
+    margin-top: -4rem;
+  }
+
+  .search-button {
+    width: 3rem;
+    margin-top: -4rem;
+    position: relative;
+    left: 6rem;
+  }
+
+  .login {
+    padding-left: 3rem;
+  }
 }
 
 /* ----------All Categories--------- */
@@ -290,7 +322,30 @@ ul {
   margin-bottom: -5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media (max-width: 992px) {
+  .section-gap {
+    padding-left: 12rem;
+    margin-right: 5rem;
+    text-align: center;
+  }
+
+  .sing-footer {
+    display: block;
+    padding-bottom: 5rem;
+  }
+
+  .list-div h6 {
+    padding-right: 5rem;
+  }
+
+  .social-links {
+    padding-left: 3rem;
+    margin-top: -10rem;
+  }
+
+  .last {
+    text-align: center;
+  }
 }
 
 .nav1 {

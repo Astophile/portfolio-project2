@@ -6,7 +6,7 @@ function Locations(props) {
     <div>
       <div className="container border rounded-2 p-3">
         <h2 className="productLocationTitle">Posted in</h2>
-        <p className="fs-12 grayShade">{props.location}</p>
+        <p className="fs-12 grayShade"></p>
         <div className="productLocationBox">
           <div className="location w-100 border rounded-2 shadow-sm">
             <iframe

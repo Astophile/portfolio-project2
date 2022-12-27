@@ -2,6 +2,7 @@ import React from "react";
 import sellerImage from "../../assets/avatar.jpg";
 import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
+
 function Description(props) {
   return (
     <div>
@@ -22,7 +23,7 @@ function Description(props) {
             className="ms-auto max-height my-auto fs-4"
           />
         </div>
-        <button className="btn btn-lg w-100 chatWithSellerBtn text-white fw-bold rounded-1 my-3">
+        <button className="btn btn-dark w-100 chatWithSellerBtn text-white fw-bold rounded-1 my-3">
           Chat with seller
         </button>
         <div className="sellerContactDetail text-center">

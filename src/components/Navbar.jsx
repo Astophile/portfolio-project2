@@ -52,7 +52,6 @@ function Navbar() {
                   <li className="nav-item dropdown ">
                     <div className="drop-box">
                       <select class=" form-select-lg mb-3 Location-input">
-                        <SearchRoundedIcon className="search-icon" />
                         <option
                           className="Location-input"
                           type="text"

@@ -88,7 +88,7 @@ function LoginForm() {
                     passHandler(e);
                   }}
                 />
-                {lastRequire && <span>Require Field</span>}
+                {lastRequire && <span>*Require Field</span>}
               </div>
 
               <div>
@@ -101,7 +101,7 @@ function LoginForm() {
                     mailHandler(e);
                   }}
                 />
-                {mailRequire && <span>Require Field</span>}
+                {mailRequire && <span>*Require Field</span>}
               </div>
             </div>
 
