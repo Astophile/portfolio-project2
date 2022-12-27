@@ -173,6 +173,10 @@
   .login {
     padding-left: 3rem;
   }
+
+  .sellButton {
+    margin-top: 5rem;
+  }
 }
 
 /* ----------All Categories--------- */
